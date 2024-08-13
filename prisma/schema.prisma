@@ -19,8 +19,8 @@ model User {
   email        String        @unique
   password     String
   bankAccounts BankAccount[]
-  Category     Category[]
-  Transaction  Transaction[]
+  categories   Category[]
+  transactions Transaction[]
 
   @@map("users")
 }
